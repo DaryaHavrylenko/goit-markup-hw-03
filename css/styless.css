@@ -19,6 +19,10 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
 }
+/* heder */
+.page-header {
+  background-color: teal;
+}
 
 /* LOGO */
 
@@ -74,6 +78,13 @@ body {
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--accent-color);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+outline: 2px solid tomato;
 }
 
 .link {
@@ -181,11 +192,13 @@ a {
 /* Button */
 
 .button {
+  display: inline-block;
   color: var(--black-color);
   background-color: var(--button-bgc);
   cursor: pointer;
 
   font-family: inherit;
+  
 }
 
 .button.prymery {
@@ -196,6 +209,9 @@ a {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
+
+  padding: 10px 32px;
+  min-width: 200px;
 }
 
 .button.secondary {
@@ -203,10 +219,27 @@ a {
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
+  padding: 6px 22px;
 }
 
 .button.secondary:hover,
 .button.secondary:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
+}
+
+.button.secondary.one {
+  min-width: 73px;
+}
+.button.secondary.two {
+  min-width: 128px;
+}
+.button.secondary.three {
+  min-width: 145px;
+}
+.button.secondary.four {
+  min-width: 103px;
+}
+.button.secondary.five {
+  min-width: 130px;
 }
