@@ -198,7 +198,9 @@ a {
   cursor: pointer;
 
   font-family: inherit;
-  
+
+  border: 1px solid transparent;
+  border-radius: 4px;
 }
 
 .button.prymery {
@@ -209,6 +211,7 @@ a {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
+  text-align: center;
 
   padding: 10px 32px;
   min-width: 200px;
@@ -220,6 +223,7 @@ a {
   line-height: 1.6;
   text-align: center;
   padding: 6px 22px;
+  
 }
 
 .button.secondary:hover,
@@ -230,6 +234,7 @@ a {
 
 .button.secondary.one {
   min-width: 73px;
+  
 }
 .button.secondary.two {
   min-width: 128px;
