@@ -47,6 +47,8 @@ body {
 
 /* СПИСКИ */
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 /* SITE-NAV */
@@ -95,6 +97,7 @@ outline: 2px solid tomato;
 
 .section-hero {
   background-color: var(--black-color);
+  text-align: center;
 }
 .hero {
   color: var(--white-color);
@@ -102,9 +105,11 @@ outline: 2px solid tomato;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  text-align: center;
+  
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 /* SECTION*/
 
