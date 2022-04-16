@@ -120,6 +120,18 @@ outline: 2px solid tomato;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+ margin-top: 0;
+ margin-bottom: 50px;
+ padding-top: 94px;
+}
+.section-tittlen {
+  display: none;
+}
+
+.section {
+  padding-bottom: 94px;
+  padding-bottom: 94px;
+  background-color: tomato;
 }
 .feature .tittle {
   color: var(--prymery-text-color);
@@ -129,6 +141,9 @@ outline: 2px solid tomato;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .tittle-command {
@@ -137,6 +152,8 @@ outline: 2px solid tomato;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 .tittle-portfol {
   color: var(--prymery-text-color);
@@ -149,12 +166,15 @@ outline: 2px solid tomato;
 
 .text {
   line-height: 1.7;
+  margin-top: 0;
 }
 
 .text-studio {
   color: var(--tittle-text-color);
   font-size: 16px;
   line-height: 1.18;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .text-portfol {
