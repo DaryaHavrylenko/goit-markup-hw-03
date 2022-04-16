@@ -9,6 +9,7 @@
   --black-color: #212121;
   --button-bgc: #f5f4fa;
   --footer-address-color: rgba(255, 255, 255, 0.6);
+  --page-header-border-color: rgba(236, 236, 236, 1);
 }
 
 body {
@@ -20,8 +21,11 @@ body {
   font-size: 14px;
 }
 /* heder */
+
 .page-header {
-  background-color: teal;
+border-bottom-width: 1px;
+border-bottom-style: solid;
+border-bottom-color: var(--page-header-border-color);
 }
 
 /* LOGO */
@@ -37,6 +41,8 @@ body {
 .logo.link:hover .link {
   text-decoration: none;
 }
+
+
 
 .logo-white {
   color: var(--white-color);
@@ -113,6 +119,11 @@ outline: 2px solid tomato;
 }
 /* SECTION*/
 
+.section {
+  padding-bottom: 94px;
+  padding-bottom: 94px;
+}
+
 .section-tittle {
   color: var(--prymery-text-color);
 
@@ -128,11 +139,11 @@ outline: 2px solid tomato;
   display: none;
 }
 
-.section {
-  padding-bottom: 94px;
-  padding-bottom: 94px;
-  background-color: tomato;
+.section-comand {
+background: #F5F4FA;
 }
+
+
 .feature .tittle {
   color: var(--prymery-text-color);
 }
@@ -162,6 +173,8 @@ outline: 2px solid tomato;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-top: 0;
+  margin-bottom: 4px;
 }
 
 .text {
@@ -183,13 +196,19 @@ outline: 2px solid tomato;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 /* ФУТЕР */
 
 .footer {
   background-color: var(--accent-footer-bgc);
+  padding-top: 0px;
+  padding-bottom: 60px;
 }
+
+
 .address {
   color: var(--white-color);
 
@@ -205,6 +224,7 @@ outline: 2px solid tomato;
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
+
 a {
   text-decoration: none;
 }
