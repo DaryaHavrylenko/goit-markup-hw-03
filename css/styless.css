@@ -20,12 +20,27 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
 }
+
+/* СПИСКИ */
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 /* heder */
 
 .page-header {
 border-bottom-width: 1px;
 border-bottom-style: solid;
 border-bottom-color: var(--page-header-border-color);
+}
+
+.main-nav,
+nav,
+.main-address {
+  display: flex;
+  align-items: center;
 }
 
 /* LOGO */
@@ -51,15 +66,23 @@ border-bottom-color: var(--page-header-border-color);
   color: var(--black-color);
 }
 
-/* СПИСКИ */
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
+
 /* SITE-NAV */
 
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav .item:not(:last-child){
+  margin-right: 50px;
+}
+
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--prymery-text-color);
 
   font-weight: 500;
@@ -75,7 +98,19 @@ border-bottom-color: var(--page-header-border-color);
 }
 /* AUTH-NAV */
 
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-nav .item + .item {
+  margin-left: 50px;
+}
+
 .auth-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--tittle-text-color);
 
   font-weight: 500;
@@ -96,6 +131,7 @@ outline: 2px solid tomato;
 }
 
 .link {
+
   text-decoration: none;
   font-style: normal;
 }
@@ -106,16 +142,15 @@ outline: 2px solid tomato;
   text-align: center;
 }
 .hero {
+    margin-top: 0;
+    margin-bottom: 30px;
   color: var(--white-color);
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 30px;
 }
 /* SECTION*/
 
@@ -125,15 +160,16 @@ outline: 2px solid tomato;
 }
 
 .section-tittle {
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding-top: 94px;
+
   color: var(--prymery-text-color);
 
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
- margin-top: 0;
- margin-bottom: 50px;
- padding-top: 94px;
 }
 .section-tittlen {
   display: none;
@@ -148,64 +184,71 @@ background: #F5F4FA;
   color: var(--prymery-text-color);
 }
 .tittle {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-
-  margin-top: 0;
-  margin-bottom: 10px;
 }
 
 .tittle-command {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   color: var(--prymery-text-color);
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  margin-top: 0;
-  margin-bottom: 10px;
 }
 .tittle-portfol {
+  margin-top: 0;
+  margin-bottom: 4px;
+
   color: var(--prymery-text-color);
 
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
-  margin-top: 0;
-  margin-bottom: 4px;
+  letter-spacing: 0.06em; 
 }
 
 .text {
-  line-height: 1.7;
   margin-top: 0;
+  margin-bottom: 0;
+
+  line-height: 1.7;
 }
 
 .text-studio {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   color: var(--tittle-text-color);
   font-size: 16px;
   line-height: 1.18;
-  margin-top: 0;
-  margin-bottom: 30px;
 }
 
 .text-portfol {
+  margin-top: 0;
+  margin-bottom: 20px;
+
   color: var(--tittle-text-color);
 
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
-  margin-top: 0;
-  margin-bottom: 20px;
 }
 
 /* ФУТЕР */
 
 .footer {
-  background-color: var(--accent-footer-bgc);
   padding-top: 0px;
   padding-bottom: 60px;
+
+  background-color: var(--accent-footer-bgc);
 }
 
 
@@ -238,17 +281,21 @@ a {
 
 .button {
   display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
   color: var(--black-color);
   background-color: var(--button-bgc);
+
   cursor: pointer;
 
   font-family: inherit;
-
-  border: 1px solid transparent;
-  border-radius: 4px;
 }
 
 .button.prymery {
+  padding: 10px 32px;
+  min-width: 200px;
+
   color: var(--white-color);
   background-color: var(--accent-color);
 
@@ -257,18 +304,15 @@ a {
   line-height: 1.9;
   letter-spacing: 0.06em;
   text-align: center;
-
-  padding: 10px 32px;
-  min-width: 200px;
 }
 
 .button.secondary {
+  padding: 6px 22px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
-  padding: 6px 22px;
-  
 }
 
 .button.secondary:hover,
