@@ -162,6 +162,7 @@ outline: 2px solid tomato;
   padding-bottom: 94px;
   padding-top: 94px;
 }
+/* секция НАШИ ПРЕИМУЩЕСТВА */
 
 .section-tittle {
   margin-top: 0;
@@ -175,9 +176,15 @@ outline: 2px solid tomato;
   line-height: 1.17;
   text-align: center;
 }
+
+/* СКРЫТИЕ h2 (СТУДИЯ) И h1 (ПОРТФОЛИО)*/
+
 .section-tittlen {
   display: none;
 }
+
+/* СПИСОК ПРЕИМУЩЕСТВ (СЕТКА ФЛЕКС) */
+
 .feature {
   display: flex;
   align-items: center;
@@ -188,7 +195,6 @@ margin-left: 30px;
 .section-comand {
 background: #F5F4FA;
 }
-
 
 .feature .tittle {
   color: var(--prymery-text-color);
@@ -202,6 +208,13 @@ background: #F5F4FA;
   line-height: 1.14;
   text-transform: uppercase;
 }
+.text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  line-height: 1.7;
+}
+/* СПИСОК ЧЕМ МЫ ЗАНИМАЕМСЯ (ФЛЕКС) */
 
 .studio {
   display: flex;
@@ -210,14 +223,15 @@ background: #F5F4FA;
 }
 .studio > .items {
   flex-basis: calc(100% / 3 - var(--examples-items-gap));
- 
-  
-  width: 370px;
+ width: 370px;
   outline: 1px solid tomato;
 }
+
 .studio > .items + .items {
   margin-left: var(--examples-items-gap);
 }
+
+/* СЕКЦИЯ НАША КОМАНДА */
 
 .tittle-command {
   margin-top: 0;
@@ -228,6 +242,45 @@ background: #F5F4FA;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+}
+.text-studio {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: var(--tittle-text-color);
+  font-size: 16px;
+  line-height: 1.18;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card-contents {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  background-color: var(--white-color);
+}
+.cards>.command {
+  flex-basis: calc(100% / 4 - var(--examples-items-gap));
+  width: 270px;
+  margin-top: var(--examples-items-gap);
+}
+
+.cards>.command+.command {
+  margin-left: 30px;
+}
+
+/* СЕКЦИЯ МЕЙН ПОРТФОЛИО */
+.portfol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
 }
 .tittle-portfol {
   margin-top: 0;
@@ -240,23 +293,6 @@ background: #F5F4FA;
   line-height: 2;
   letter-spacing: 0.06em; 
 }
-
-.text {
-  margin-top: 0;
-  margin-bottom: 0;
-
-  line-height: 1.7;
-}
-
-.text-studio {
-  margin-top: 0;
-  margin-bottom: 30px;
-
-  color: var(--tittle-text-color);
-  font-size: 16px;
-  line-height: 1.18;
-}
-
 .text-portfol {
   margin-top: 0;
 
@@ -266,20 +302,11 @@ background: #F5F4FA;
   font-size: 16px;
   line-height: 1.9;
 }
-.portfol {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-  
-}
-.portfol .button + .button {
+.portfol .button+.button {
   margin-left: 8px;
 }
 
-/* examples portfolio */
+/* examples portfolio  (СЕТКА ФЛЕКС) */
 
 .examples {
   display: flex;
@@ -294,7 +321,6 @@ background: #F5F4FA;
   margin-left: var(--examples-items-gap);
   
 }
-
 .card-content {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -303,6 +329,7 @@ background: #F5F4FA;
 border: 1px solid var(--border-card-content);
 }
 
+/* IMG */
 
 img {
   display: block;
