@@ -10,7 +10,8 @@
   --button-bgc: #f5f4fa;
   --footer-address-color: rgba(255, 255, 255, 0.6);
   --page-header-border-color: rgba(236, 236, 236, 1);
-  --examples-item-gap: 30px;
+  --examples-items-gap: 30px;
+  --border-card-content: rgba(238, 238, 238, 1);
 }
 
 body {
@@ -202,6 +203,22 @@ background: #F5F4FA;
   text-transform: uppercase;
 }
 
+.studio {
+  display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+}
+.studio > .items {
+  flex-basis: calc(100% / 3 - var(--examples-items-gap));
+ 
+  
+  width: 370px;
+  outline: 1px solid tomato;
+}
+.studio > .items + .items {
+  margin-left: var(--examples-items-gap);
+}
+
 .tittle-command {
   margin-top: 0;
   margin-bottom: 10px;
@@ -242,7 +259,6 @@ background: #F5F4FA;
 
 .text-portfol {
   margin-top: 0;
-  margin-bottom: 20px;
 
   color: var(--tittle-text-color);
 
@@ -257,7 +273,7 @@ background: #F5F4FA;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
-  background-color: tomato;
+  
 }
 .portfol .button + .button {
   margin-left: 8px;
@@ -268,16 +284,25 @@ background: #F5F4FA;
 .examples {
   display: flex;
   flex-wrap: wrap;
-  margin-left: calc(-1 * var(--examples-item-gap));
-  margin-top: calc(-1 * var(--examples-item-gap));
+  margin-left: calc(-1 * var(--examples-items-gap));
+  margin-top: calc(-1 * var(--examples-items-gap));
 }
 .examples > .items {
-  flex-basis: calc(100% / 3 - var(--examples-item-gap));
+  flex-basis: calc(100% / 3 - var(--examples-items-gap));
   width: 370px;
-  margin-top: var(--examples-item-gap);
-  margin-left: var(--examples-item-gap);
-  outline: 1px solid tomato ;
+  margin-top: var(--examples-items-gap);
+  margin-left: var(--examples-items-gap);
+  
 }
+
+.card-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+border: 1px solid var(--border-card-content);
+}
+
 
 img {
   display: block;
