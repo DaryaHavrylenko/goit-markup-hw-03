@@ -218,11 +218,13 @@ margin-left: 30px;
 .studio {
   display: flex;
  flex-wrap: wrap;
- justify-content: space-between;
+ /* justify-content: space-between; */
 }
 .studio > .items {
- width: 370px;
- margin-right: 30px;
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+ /* width: 370px;
+ margin-right: 30px; */
 }
 
 .studio > .items:nth-child(3n) {
@@ -258,7 +260,7 @@ margin-left: 30px;
 .cards {
   display: flex;
   flex-wrap: wrap;
- justify-content: space-between;
+ /* justify-content: space-between; */
 }
 .card-contents {
   text-align: center;
@@ -268,11 +270,13 @@ margin-left: 30px;
 background-color: var(--white-color);
 }
 .cards>.command {
+  width: calc((100% - 90px) / 4);
   margin-right: 30px;
-  width: 270px;
+  /* margin-right: 30px;
+  width: 270px; */
 }
 .cards > .command:nth-child(4n) {
-  margin-right: 0;
+   margin-right: 0; 
 }
 
 /* СЕКЦИЯ МЕЙН ПОРТФОЛИО */
@@ -350,14 +354,20 @@ img {
 /* ФУТЕР */
 
 .footer {
-  padding-top: 0px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
   padding-bottom: 60px;
 
   background-color: var(--accent-footer-bgc);
 }
+.address.list {
+  margin-top: 20px;
+}
 
 
 .address {
+  margin-bottom: 9px;
   color: var(--white-color);
 
   line-height: 1.7;
@@ -365,6 +375,8 @@ img {
   font-style: normal;
 }
 .address-link {
+  margin-bottom: 9px;
+
   color: rgba(255, 255, 255, 0.6);
 
   font-style: normal;
