@@ -33,9 +33,7 @@ body {
 /* heder */
 
 .page-header {
-border-bottom-width: 1px;
-border-bottom-style: solid;
-border-bottom-color: var(--page-header-border-color);
+border-bottom: 1px solid var(--page-header-border-color);
 }
 
 .main-nav,
@@ -127,9 +125,10 @@ nav,
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  outline: 1px solid tomato;
 }
 
 .link {
@@ -144,28 +143,37 @@ font-style: normal;
   text-align: center;
   padding-bottom: 200px;
   padding-top: 200px;
-  margin-bottom: 94px;
+  
 }
-.hero {
+.hero { 
   margin-top: 0;
   margin-bottom: 30px;
+
   color: var(--white-color);
 
+width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
 }
+
 /* SECTION*/
 
 .section {
   padding-bottom: 94px;
-  /* padding-top: 94px; */
+  padding-top: 94px;
 }
-
+.section:nth-child(3) {
+  padding-top: 0;
+}
 /* секция НАШИ ПРЕИМУЩЕСТВА */
 
+.feature > .item {
+  width: 270px;
+}
 .section-tittle {
   margin-top: 0;
   margin-bottom: 50px;
@@ -321,7 +329,7 @@ margin-bottom: 0;
 .examples {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  
 }
 .examples > .items {
   width: 370px;
@@ -339,7 +347,9 @@ margin-bottom: 0;
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
-border: 1px solid var(--border-card-content);
+border-right: 1px solid var(--border-card-content);
+border-left: 1px solid var(--border-card-content);
+border-bottom: 1px solid var(--border-card-content);
 }
 
 /* IMG */
@@ -360,10 +370,21 @@ img {
 
   background-color: var(--accent-footer-bgc);
 }
-.address.list {
+
+address {
   margin-top: 20px;
 }
 
+
+.foot {
+  margin-top: 0;
+  margin-bottom: 9px;
+  color: var(--white-color);
+  
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
 
 .address {
   margin-bottom: 9px;
@@ -373,9 +394,11 @@ img {
   letter-spacing: 0.03em;
   font-style: normal;
 }
-.address-link {
-  margin-bottom: 9px;
+.address:last-child {
+  margin-bottom: 0;
+}
 
+.address-link {
   color: rgba(255, 255, 255, 0.6);
 
   font-style: normal;
