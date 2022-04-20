@@ -128,7 +128,6 @@ nav,
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid tomato;
 }
 
 .link {
@@ -146,10 +145,10 @@ font-style: normal;
   
 }
 .hero { 
-  margin-top: 0;
+  margin: auto;
   margin-bottom: 30px;
 
-  color: var(--white-color);
+color: var(--white-color);
 
 width: 696px;
   font-weight: 900;
@@ -185,12 +184,6 @@ width: 696px;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-}
-
-/* СКРЫТИЕ h2 (СТУДИЯ) И h1 (ПОРТФОЛИО)*/
-
-.section-tittlen {
-  display: none;
 }
 
 /* СПИСОК ПРЕИМУЩЕСТВ (СЕТКА ФЛЕКС) */
